@@ -20,6 +20,7 @@ public class ViewFlipperExamples extends AppCompatActivity
 
         mviewFlipper=findViewById(R.id.view_flipper);
         int img[]={R.drawable.one,R.drawable.two,R.drawable.three};
+        
 
        for (int i=0;i<img.length;i++)
        {
