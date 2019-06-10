@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="gif.ganesh.pushnotififirebase">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".introducionLayouts.LaunchIntroductionScreens">
+
+        </activity>
+        <activity android:name=".workingWithDrawing.SecondImage" />
+        <activity android:name=".workingWithDrawing.WorkingWithDrawing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".ribbon.RibbonRelatedAct" />
+        <activity android:name=".retrofitWorking.RetrofitTesting" />
+        <activity android:name=".gesturesWorking.GesturesWorking" />
+        <activity android:name=".fragmentTestings.FirstActivity" />
+        <activity android:name=".qrcode.DisplayScannedTextAct" />
+        <activity
+            android:name=".qrcode.QRCodeRelated"
+            android:screenOrientation="portrait"
+            tools:replace="android:screenOrientation" />
+        <activity android:name=".sharedPreference.SharedPreferencesExmps" />
+        <activity android:name=".DesignExamples" />
+        <activity
+            android:name=".RestaurantDetailsAdding"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".piechart.PieChartWithArrays" />
+        <activity android:name=".PhoneAuthentication" />
+        <activity android:name=".imageviewToGallery.ImageviewToGallryStore" />
+        <activity android:name=".bottomNavigation.BottomNavigationActivities" />
+        <activity android:name=".androidMVVMExmples.MVVMExamples" />
+        <activity android:name=".viewFlippers.ViewFlipperExamples" />
+        <activity android:name=".firebaseWithFireStore.FireBaseCumFireStore" />
+        <activity android:name=".fireStoreExample.InsertingDataIntoFirestore" />
+        <activity android:name=".MainActivity" />
+
+        <service android:name=".MyFbMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notifi" />
+
+        <service
+            android:name=".MyFbToken"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="com.google.firebase.INSTANCE_ID_EVENT" /> -->
+            <!-- </intent-filter> -->
+        </service>
+    </application>
+
+</manifest>
