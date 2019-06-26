@@ -19,9 +19,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".introducionLayouts.LaunchIntroductionScreens">
+        <activity android:name=".staticRecyclerView.StaticsRecyclersViews">
 
         </activity>
+
+        <activity android:name=".introducionLayouts.LaunchIntroductionScreens"></activity>
         <activity android:name=".workingWithDrawing.SecondImage" />
         <activity android:name=".workingWithDrawing.WorkingWithDrawing">
             <intent-filter>

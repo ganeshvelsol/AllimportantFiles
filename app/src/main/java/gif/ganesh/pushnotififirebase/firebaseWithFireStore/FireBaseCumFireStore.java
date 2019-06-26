@@ -85,7 +85,6 @@ public class FireBaseCumFireStore extends AppCompatActivity
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task)
                     {
-
                         if (task.isSuccessful())
                         {
                             //inserting the data into the firestotr when the user authenticates done succesfully
@@ -113,9 +112,6 @@ public class FireBaseCumFireStore extends AppCompatActivity
                         }
                     }
                 });
-
-
-
 
     }
 

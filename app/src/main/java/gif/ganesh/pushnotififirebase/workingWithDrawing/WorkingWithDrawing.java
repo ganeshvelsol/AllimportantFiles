@@ -44,6 +44,8 @@ public class WorkingWithDrawing extends AppCompatActivity
         paintView=new PaintView(this);
         setContentView(paintView);
 
+        
+
 
 
 
